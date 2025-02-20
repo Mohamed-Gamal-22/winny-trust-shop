@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+.main-color {
+  color: #f07167;
+}
+.main-bg-color {
+  background-color: #f07167;
+}
+
+.light-color {
+  color: #fed9b7;
+}
+.light-bg-color {
+  background-color: #fed9b7;
+}
+
+.lighter-color {
+  color: #fdfcdc;
+}
+.lighter-bg-color {
+  background-color: #fdfcdc;
+}
+
+.second-color {
+  color: #00afb9;
+}
+.second-bg-color {
+  background-color: #00afb9;
+}
+
+.third-color {
+  color: #0081a7;
+}
+.third-bg-color {
+  background-color: #0081a7;
+}
