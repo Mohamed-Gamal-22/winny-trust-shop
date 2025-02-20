@@ -17,6 +17,10 @@
   background-color: #fed9b7;
 }
 
+.row {
+  @apply flex flex-wrap 
+}
+
 .lighter-color {
   color: #fdfcdc;
 }

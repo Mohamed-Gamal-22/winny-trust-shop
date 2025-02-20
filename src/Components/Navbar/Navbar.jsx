@@ -1,17 +1,16 @@
 import React from "react";
-import style from "./Navbar.module.css";
-import darkBigLogo from "../../assets/darkBig.png";
 import lightBigLogo from "../../assets/lightBig.png";
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({ isFilter }) {
   return (
-    <nav className="fixed top-0 start-0 end-0 bg-[#0081a7] dark:bg-[#f07167]">
+    <nav className="bg-[#0081a7] dark:bg-[#f07167]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a
-          href="#"
+        <Link
+          to="/"
           className="flex items-center  space-x-3 rtl:space-x-reverse"
         >
-          <img src={lightBigLogo} className="h-14" alt="Flowbite Logo" />
+          <img src={lightBigLogo} className="h-12" alt="Flowbite Logo" />
           <div className="flex flex-col ">
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
               Winny trust
@@ -20,7 +19,7 @@ export default function Navbar() {
               free for shopping
             </span>
           </div>
-        </a>
+        </Link>
         <div className="flex space-x-3">
           <button
             data-collapse-toggle="navbar-cta"
@@ -52,51 +51,51 @@ export default function Navbar() {
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-cta"
         >
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-2 border-[#fed9b7] border-t-0 border-e-0 rounded-0 bg-white md:bg-transparent">
+          <ul className="flex items-center flex-col font-medium p-4 md:p-0 mt-4  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-2 border-[#fed9b7] border-t-0 border-e-0 rounded-0 bg-white md:bg-transparent">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="block py-2 px-3 md:p-0 text-dark md:text-white rounded-sm 
                  dark:border-gray-700 hover:text-[#666] md:hover:text-[#fdfcdc] dark:hover:text-[#666] md:dark:hover:text-[#fdfcdc]"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/categories"
                 className="block py-2 px-3 md:p-0 text-dark md:text-white rounded-sm 
                  dark:border-gray-700 hover:text-[#666] md:hover:text-[#fdfcdc] dark:hover:text-[#666] md:dark:hover:text-[#fdfcdc]"
               >
                 Categories
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 md:p-0 text-dark md:text-white rounded-sm 
-                 dark:border-gray-700 hover:text-[#666] md:hover:text-[#fdfcdc] dark:hover:text-[#666] md:dark:hover:text-[#fdfcdc]"
-              >
-                Products
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
+              <Link
+                to="brands"
                 className="block py-2 px-3 md:p-0 text-dark md:text-white rounded-sm 
                  dark:border-gray-700 hover:text-[#666] md:hover:text-[#fdfcdc] dark:hover:text-[#666] md:dark:hover:text-[#fdfcdc]"
               >
                 Brands
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/cart"
                 className="block py-2 px-3 md:p-0 text-dark md:text-white rounded-sm 
                  dark:border-gray-700 hover:text-[#666] md:hover:text-[#fdfcdc] dark:hover:text-[#666] md:dark:hover:text-[#fdfcdc]"
               >
                 Cart <i className="fa-solid fa-cart-plus"></i>
-              </a>
+              </Link>
+            </li>
+            <li>
+              <span
+                onClick={isFilter}
+                className="block py-2 px-3 text-dark dark md:text-[#0081a7] dark:md:text-[#f07167] rounded-sm cursor-pointer 
+                 dark:border-gray-700 hover:text-[#666] md:hover:text-[#0081a7] dark:hover:text-[#666]  bg-[#fdfcdc]"
+              >
+                Filter <i className="fa-solid fa-filter text-dark"></i>
+              </span>
             </li>
           </ul>
         </div>
