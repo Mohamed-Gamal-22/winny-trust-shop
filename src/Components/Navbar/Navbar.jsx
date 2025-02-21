@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar({ isFilter }) {
   return (
-    <nav className="bg-[#0081a7] dark:bg-[#f07167]">
+    <nav className="bg-[#1877F2] dark:bg-[#f07167]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           to="/"
@@ -28,7 +28,7 @@ export default function Navbar({ isFilter }) {
             aria-controls="navbar-cta"
             aria-expanded="false"
           >
-            <span className="text-xl fa-solid fa-bars-staggered group-hover:text-[#00afb9] dark:group-hover:text-[#f07167] dark:text-[#fdfcdc] text-[#fdfcdc]"></span>
+            <span className="text-xl fa-solid fa-bars-staggered group-hover:text-[#1877F2] dark:group-hover:text-[#f07167] dark:text-[#fdfcdc] text-[#fdfcdc]"></span>
             {/* <span className="sr-only">Open main menu</span>
             <svg
               className="w-5 h-5"
@@ -91,8 +91,8 @@ export default function Navbar({ isFilter }) {
             <li>
               <span
                 onClick={isFilter}
-                className="block py-2 px-3 text-dark dark md:text-[#0081a7] dark:md:text-[#f07167] rounded-sm cursor-pointer 
-                 dark:border-gray-700 hover:text-[#666] md:hover:text-[#0081a7] dark:hover:text-[#666]  bg-[#fdfcdc]"
+                className="block py-2 px-3 text-dark dark md:text-[#1877F2] dark:md:text-[#f07167] rounded-sm cursor-pointer 
+                 dark:border-gray-700 hover:text-[#666] md:hover:text-[#1877F2] dark:hover:text-[#666]  bg-[#fdfcdc]"
               >
                 Filter <i className="fa-solid fa-filter text-dark"></i>
               </span>

@@ -3,6 +3,10 @@
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 
+.main-btn{
+  @apply w-full bg-blue-600 p-2 text-white my-2 rounded-sm cursor-pointer
+}
+
 .main-color {
   color: #f07167;
 }
